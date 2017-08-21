@@ -27,21 +27,18 @@ public class AppTest
     /**
      * @return the suite of tests being tested
      */
-    public static Test suite()
-    {
+    public static Test suite() {
         return new TestSuite( AppTest.class );
     }
 
     /**
      * Test the calculator methods
      */
-    public void testApp() throws FileNotFoundException
-    {
-		try{
+    public void testApp() throws FileNotFoundException {
+		try {
 		File input = new File("src/test/resources/numbers.txt");
 		Scanner in = new Scanner(input);
-		while(in.hasNextInt())
-		{
+		while(in.hasNextInt()) {
 			int a = in.nextInt();
 			int b = in.nextInt();
 			System.out.println(a +" , "+b);
